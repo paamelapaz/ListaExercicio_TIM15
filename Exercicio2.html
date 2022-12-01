@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Atividade cadastro de uma disciplina</h1>
+
+    <p>nome: <span id="nome"></span></p>
+    <p>descrição: <span id="descricao"></span></p>
+    <p>frequencia: <span id="frequencia"></span></p>
+    <p>media minima para aprovação: <span id="aprovacao"></span></p>
+<script>
+    let nome =prompt("digite o nome do aluno")
+    let descricao =prompt("digite a descricao do aluno")
+    let frequencia =prompt("digite a frequencia do aluno")
+    let media_minima_para_aprovacao =6;
+
+    document.getElementById("nome").innerHTML =nome;
+    document.getElementById("descricao").innerHTML =descricao;
+    document.getElementById("frequencia").innerHTML =frequencia;
+    document.getElementById("aprovacao").innerHTML =media_minima_para_aprovacao;
+    
+</script>    
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Horas, minutos e segundos</h1>
+
+    <p>Horas: <span id="horas"></span></p>
+    <p>Minutos: <span id="minutos"></span></p>
+    <p>Segundos: <span id="segundos"></span></p>
+    <p>Horas em segundos: <span id="horas_em_segundos"></span></p>
+    <script>
+        let Horas =Number (prompt("digite as horas"));
+        let Minutos =Number (prompt("digite os minutos"));
+        let Segundos =Number (prompt("digite os segundos"));
+        let Horas_em_segundos =Number((((Horas*60)+Minutos)*60)+Segundos);
+
+        document.getElementById("horas").innerHTML =Horas;
+        document.getElementById("minutos").innerHTML =Minutos;
+        document.getElementById("segundos").innerHTML =Segundos;
+        document.getElementById("horas_em_segundos").innerHTML =Horas_em_segundos;
+    
+
+    </script>
+</body>
+</html>

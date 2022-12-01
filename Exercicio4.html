@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nome, notas, disciplina e turma do aluno</h1>
+
+<p>Nome: <span id="nome"></span></p>
+<p>Nota_1: <span id="nota_1"></span></p>  
+<p>Nota_2: <span id="nota_2"></span></p>
+<p>Nota_3: <span id="nota_3"></span></p>
+<p>Disciplina <span id="disciplina"></span></p>
+<p>Turma: <span id="turma"></span></p>
+<p>Media: <span id="media"></span></p>
+<script>
+    let Nome =prompt("digite o nome do aluno")
+    let Nota_1 =Number (prompt("digite a nota do aluno"))
+    let Nota_2 =Number (prompt("digite a nota do aluno"))
+    let Nota_3 =Number (prompt("digite a nota do aluno"))
+    let Disciplina =prompt("digite a disciplina")
+    let Turma =prompt("digite o numero da turma do aluno")
+    let Media =Number ((Nota_1+Nota_2+Nota_3) /3)
+
+    document.getElementById("nome").innerHTML =Nome;
+    document.getElementById("nota_1").innerHTML =Nota_1;
+    document.getElementById("nota_2").innerHTML =Nota_2;
+    document.getElementById("nota_3").innerHTML =Nota_3;
+    document.getElementById("disciplina").innerHTML =Disciplina;
+    document.getElementById("turma").innerHTML =Turma;
+    document.getElementById("media").innerHTML = Media;
+</script>
+</body>
+</html>
