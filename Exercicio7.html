@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conta no banco</h1>
+
+    <p>Nome do correntista: <span id="nomeCorrentista"></span></p>
+    <p>Numero da conta: <span id="numeroConta"></span></p>
+    <p>Saldo disponivel: <span id="saldo"></span></p>
+
+<script>
+    let nomeCorrentista = prompt ("digite o nome do correntista");
+    let numeroConta = prompt ("digite o numero da conta");
+    let chequesDeb = Number (prompt("digite o total de cheques a debitar"));
+    let chequesCred = Number (prompt("digite o total de cheques a creditar"));
+    let limite = Number (prompt("digite o limite"));
+    let saldoAtual =Number (prompt("digite o saldo atual"));
+    let saldoDisponivel = (saldoAtual + chequesCred + limite)-chequesDeb;
+
+    document.getElementById("nomeCorrentista").innerHTML = nomeCorrentista;
+    document.getElementById("numeroConta").innerHTML =numeroConta;
+    document.getElementById("saldo").innerHTML =saldoDisponivel;
+    
+
+</script>
+    
+</body>
+</html>
